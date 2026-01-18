@@ -3,12 +3,12 @@
     <style name="AppTheme" parent="Theme.AppCompat.DayNight">
         <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
         <item name="colorPrimary">@color/almostWhite</item>
-        <item name="colorAccent">@color/olvid_gradient_light</item>
+        <item name="colorAccent">@color/imessage_blue</item>
         <item name="android:navigationBarColor">@color/transparent</item>
         <item name="android:windowBackground">@color/almostWhite</item>
         <item name="android:textColorHint">@color/grey</item>
         <item name="windowActionModeOverlay">true</item>
-        <item name="actionModeBackground">@color/olvid_gradient_light</item>
+        <item name="actionModeBackground">@color/imessage_blue</item>
         <item name="android:windowLightStatusBar" tools:targetApi="23">@bool/dayMode</item>
     </style>
 
@@ -107,7 +107,7 @@
     <!-- AppBar style to use for "white" AppBar for dark icons, and still force white icons when in actionMode -->
     <style name="AppTheme.LightAppBarOverlay" parent="ThemeOverlay.AppCompat.ActionBar">
         <item name="actionModeTheme">@style/AppTheme.DarkAppBarOverlay</item>
-        <item name="actionModeBackground">@color/olvid_gradient_light</item>
+        <item name="actionModeBackground">@color/imessage_blue</item>
     </style>
 
     <style name="AppTheme.Splashscreen" parent="AppTheme.NoActionBar"/>
@@ -191,7 +191,7 @@
         <item name="colorAccent">@color/orange</item>
     </style>
     <style name="AppTheme.BlueAccent">
-        <item name="colorAccent">@color/olvid_gradient_light</item>
+        <item name="colorAccent">@color/imessage_blue</item>
     </style>
     <style name="AppTheme.GreyAccent">
         <item name="colorAccent">@color/greyOverlay</item>

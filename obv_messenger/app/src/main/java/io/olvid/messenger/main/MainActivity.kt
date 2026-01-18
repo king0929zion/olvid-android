@@ -964,9 +964,9 @@ class MainActivity : LockableActivity(), OnClickListener, SharedPreferences.OnSh
         OnPageChangeCallback() {
         private val imm: InputMethodManager =
             getSystemService(INPUT_METHOD_SERVICE) as InputMethodManager
-        private val inactiveColor: Int = ContextCompat.getColor(this@MainActivity, R.color.greyTint)
+        private val inactiveColor: Int = ContextCompat.getColor(this@MainActivity, R.color.imessage_tab_bar_unselected)
         private val activeColor: Int =
-            ContextCompat.getColor(this@MainActivity, R.color.olvid_gradient_light)
+            ContextCompat.getColor(this@MainActivity, R.color.imessage_blue)
         private var currentPosition = -1
 
         override fun onPageSelected(position: Int) {

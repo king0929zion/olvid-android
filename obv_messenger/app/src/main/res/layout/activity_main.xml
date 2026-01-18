@@ -156,13 +156,18 @@
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/whiteOpaqueOverlay"
+        android:background="@color/imessage_tab_bar_bg"
         android:layout_gravity="bottom">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/imessage_separator" />
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/bottom_buttons"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/tab_bar_size">
+            android:layout_height="@dimen/imessage_tab_bar_height">
 
             <ImageView
                 android:id="@+id/tab_discussions_button"

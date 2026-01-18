@@ -231,7 +231,7 @@ fun DiscussionListItem(
                                 modifier = Modifier
                                     .padding(start = 2.dp, end = if (unreadCount > 0) 2.dp else 0.dp)
                                     .background(
-                                        color = colorResource(id = R.color.olvid_gradient_light),
+                                        color = colorResource(id = R.color.imessage_blue),
                                         shape = CircleShape
                                     )
                                     .padding(horizontal = 8.dp, vertical = 2f.dp),
@@ -245,7 +245,7 @@ fun DiscussionListItem(
                                 modifier = Modifier
                                     .padding(start = 2.dp)
                                     .background(
-                                        color = colorResource(id = R.color.red),
+                                        color = colorResource(id = R.color.imessage_blue),
                                         shape = CircleShape
                                     )
                                     .padding(horizontal = 7.dp, vertical = 2f.dp),

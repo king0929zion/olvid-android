@@ -64,4 +64,20 @@
     <color name="poll9">#6C3C00</color>
     <color name="poll10">#A85151</color>
     <color name="poll11">#85785C</color>
+
+    <!-- iMessage style colors - Day mode -->
+    <color name="imessage_blue">#007AFF</color>
+    <color name="imessage_blue_light">#4DA6FF</color>
+    <color name="imessage_grey">#E5E5EA</color>
+    <color name="imessage_grey_dark">#C7C7CC</color>
+    <color name="imessage_text_light">#FFFFFF</color>
+    <color name="imessage_text_dark">#000000</color>
+    <color name="imessage_tab_bar_bg">#FFFFFF</color>
+    <color name="imessage_tab_bar_selected">#007AFF</color>
+    <color name="imessage_tab_bar_unselected">#8E8E93</color>
+    <color name="imessage_separator">#C6C6C8</color>
+    <color name="imessage_sent_text">#FFFFFF</color>
+    <color name="imessage_received_text">#000000</color>
+    <color name="imessage_sent_background">#007AFF</color>
+    <color name="imessage_received_background">#E5E5EA</color>
 </resources>

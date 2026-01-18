@@ -209,7 +209,7 @@ fun ScrollDownButton(modifier: Modifier = Modifier, onClick: () -> Unit) {
     IconButton(
         modifier = modifier
             .background(
-                color = colorResource(id = R.color.olvid_gradient_light),
+                color = colorResource(id = R.color.imessage_blue),
                 shape = CircleShape
             )
             .requiredSize(40.dp),
@@ -306,7 +306,7 @@ fun Message(
                         .size(32.dp)
                         .align(Alignment.CenterStart)
                         .background(
-                            color = colorResource(id = R.color.olvid_gradient_light),
+                            color = colorResource(id = R.color.imessage_blue),
                             shape = CircleShape
                         )
                         .padding(4.dp),
@@ -405,14 +405,14 @@ fun Message(
                                 } ?: Modifier
                             )
                             .background(
-                                color = if (message.isInbound) colorResource(id = R.color.lighterGrey)
+                                color = if (message.isInbound) colorResource(id = R.color.imessage_received_background)
                                 else if (message.messageType == Message.TYPE_OUTBOUND_MESSAGE) colorResource(
-                                    id = R.color.primary100
+                                    id = R.color.imessage_sent_background
                                 )
                                 else Color.Transparent,
-                                shape = RoundedCornerShape(8.dp)
+                                shape = RoundedCornerShape(20.dp)
                             )
-                            .clip(RoundedCornerShape(8.dp))
+                            .clip(RoundedCornerShape(20.dp))
                             .combinedClickable(
                                 interactionSource = interactionSource,
                                 indication = ripple(),
@@ -1033,8 +1033,8 @@ fun MessageBody(
         }
         Text(
             text = text,
-            color = if (message.isInbound) colorResource(id = R.color.inboundMessageBody) else colorResource(
-                id = R.color.primary700
+            color = if (message.isInbound) colorResource(id = R.color.imessage_received_text) else colorResource(
+                id = R.color.imessage_sent_text
             ),
             style = if (message.isInbound || message.messageType == Message.TYPE_OUTBOUND_MESSAGE) OlvidTypography.body1.copy(
                 fontSize = (16 * scale).sp,
@@ -1371,8 +1371,8 @@ fun MessageBody(
                             textAlign = if (message.isInbound || message.messageType == Message.TYPE_OUTBOUND_MESSAGE) textAlign else TextAlign.Center,
                             onTextLayout = { layoutResult = it },
                             overflow = TextOverflow.Visible,
-                            color = if (message.isInbound) colorResource(id = R.color.inboundMessageBody) else colorResource(
-                                id = R.color.primary700
+                            color = if (message.isInbound) colorResource(id = R.color.imessage_received_text) else colorResource(
+                                id = R.color.imessage_sent_text
                             ),
                             style = if (message.isInbound || message.messageType == Message.TYPE_OUTBOUND_MESSAGE) OlvidTypography.body1.copy(
                                 fontSize = textSize,
