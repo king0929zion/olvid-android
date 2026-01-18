@@ -23,7 +23,7 @@ jobs:
       uses: android-actions/setup-android@v3
 
     - name: Build with Gradle
-      run: ./gradlew assembleDebug --stacktrace
+      run: cd obv_messenger && ./gradlew assembleDebug --stacktrace
 
     - name: Upload APK
       if: success()
